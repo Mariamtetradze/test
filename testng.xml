@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation Suite" thread-count="3" parallel="tests">    <!--verbose="1" thread-count="8"-->      <!-- პარალელურად გასაშვებად parallel="tests" უნდა დაემატოს აქაც და test-შიც-->
+
+    <test name="TestSuit3" parallel="tests" >
+        <classes>
+            <class name="Template.HomePageTest" />
+        </classes>
+    </test>
+
+    <test name="TestSuit4" parallel="tests" >
+        <classes>
+            <class name="Template.CompanyInfo" />
+        </classes>
+    </test>
+
+
+</suite>
